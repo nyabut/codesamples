@@ -308,8 +308,10 @@ if (php_sapi_name() == 'cli')
     else
     {
         echo "This script uses a reporters file to scan the data folder and outputs two csv files:\n";
-        echo "One file lists the citations and how many times they ocurred and the other lists\n";
-        echo "the pin citations that could not be mapped back to the original citation.\n\n";
-        echo "Usage: php citationMatcher.php <full path to reporters file> <full path to data folder>\n";
+        echo "citations.csv lists the citations and how many times they ocurred and\n";
+        echo "unmatched_citations.csv lists the pin citations that could not be mapped back to the\n";
+        echo "original citation.\n\n";
+        echo "Requres: PHP 5.4.30+, PHP memory_limit >= 256, read/write permissions to the data directory.\n\n";
+        echo "Usage: php citationMatcher.php <full path to reporters file> <full path to data folder>\n\n";
     }
 }
