@@ -16,8 +16,8 @@ class CitationMatcher
     *
     * @param string $reportersFilename the filename including the full path
     *     to the reporters file
-    * @param string $directory the full path to the directory containing the
-    *     data to parse
+    * @param string $directory         the full path to the directory 
+    *     containing the data to parse
     *
     * @return void
     */
@@ -175,7 +175,7 @@ class CitationMatcher
     * containing unmatched citations.  Otherwise, if a match is found, the 
     * edge weight is incremented
     *
-    * @param Array $matches   The array returned from the match() method
+    * @param Array  $matches  The array returned from the match() method
     * @param string $filename The filename of the file being matched against
     *
     * @return Array
@@ -278,7 +278,6 @@ class CitationMatcher
         }
     }
 }
-
 
 // Only run this when executed on the commandline
 if (php_sapi_name() == 'cli')
